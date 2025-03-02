@@ -103,10 +103,10 @@ def toBinary(n):
 
     return binary_rep
 
-#print(largestPower(8))
-#print(largestPower(17))
-#print(numDigits(100))
-#print(numDigits(8))
+print(toDecimal(1001))
+print(toDecimal(1000))
+print(toDecimal(10101))
+print(toDecimal(11000))
 
 for i in range(0,512):
     binrep = toBinary(i)
