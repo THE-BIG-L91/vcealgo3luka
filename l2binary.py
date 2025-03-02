@@ -12,7 +12,7 @@ def largestPower(n):
 
     return index
 
-def numDigits(n): # Essentially the same as largestpower
+def numDigits(n): # works in a similar way to largestpower
     if (n < 11):
         return 1    
     smallest_hund = 10
@@ -20,7 +20,7 @@ def numDigits(n): # Essentially the same as largestpower
 
     # taking a number mod. 10^(length + 1) will give you
     # the number
-    # e.g. 153 mod. 1000 = 153
+    # e.g. 123 mod. 1000 = 123
 
     while (n%smallest_hund != n):
         smallest_hund *= 10
@@ -83,9 +83,7 @@ def toDecimal(n):
     return decrep
 
 # Revised version -- did not want to use strings
-# Works in a similar way to the version using strings, 
-# Works 10^i in base 10 is equivalent to 2^i in base 2
-# where there is a 1 in base 2.. add 10^i to. the value being returned
+# Works in a vaguely similar way to the version using strings, 
 def toBinary(n):
     if (n==0):
         return 0
