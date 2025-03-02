@@ -1,4 +1,5 @@
 import random
+import math
 
 def main():
     first = random.randint(1,50)
@@ -25,9 +26,6 @@ def main():
     else:
         print("Remainder: ", larger%smaller)
 
-        # If the two are the hypotenuse an d shorter side.. 
-        # find len shorter side
-
-    shorter_side = larger**2 - smaller**2
+    shorter_side = math.sqrt(larger**2 - smaller**2)
 
 main()
